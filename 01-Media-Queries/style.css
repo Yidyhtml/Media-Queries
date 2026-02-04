@@ -1,0 +1,79 @@
+body {
+    background-color: black;
+    color: aliceblue;
+}
+
+/* Los media queries nos permiten aplicar estilos específicos de a cuerdo a las características del dispositivo.
+Utilizan la regla @media para condicionar la aplicacion de estos estilos.
+
+Síntaxis:@media media-type conector ( media-feature-rule) {
+reglas de css que se van a aplicar cuando se cumplen estas condiciones
+
+}
+
+MEDYA TYPE
+* screen > Pantallas de computadora, tablets o móviles.
+speech > sintetizadores de voz
+print > para documentos impresos o para imprimir la web
+all > todos los dispositivos, valor por defecto.
+
+CONECTORS 
+and (y) > Se coloca entre el media-type y el media-feature-rule.
+or (o) > Se usa una coma para separar media features.
+not (negación) > Se coloca antes de media-type
+
+
+MEDIA FEATURE RULES
+
+width
+heigth
+min-width
+min-heigth
+resolution
+color
+
+    
+*/
+
+body {
+    background-color: black;
+    color: aliceblue;
+}
+h1 {
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width:1024px) {
+    body {
+        background-color:pink;
+    }
+    h1{
+        font-family: serif;
+        font-size: 6rem;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    body { 
+        background-color: cadetblue;
+    }
+    h1{
+        font-size: 1rem;
+        font-family: fantasy;
+
+    }
+}
+
+@media screen and (max-width:480px){
+    body { 
+        background-color: rgb(43, 43, 43);
+    }
+    h1{
+        font-size: 10rem;
+        font-family: monospace;
+    
+        
+    }
+}
